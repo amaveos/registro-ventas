@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Informe de Ventas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    .main {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 50%;
+    }
+
+    .cnt-reporte-ventas {
+        background: #f3f3f3;
+        border-radius: 10px 10px 0 0;
+        padding: 40px;
+    }
+
+    h2 {
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    a {
+        color: #4141ff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+        margin: 20px;
+    }
+
+    table,
+    thead,
+    tbody {
+        display: inline-table;
+        width: 100%;
+    }
+
+    th,
+    td {
+        color: rgb(70, 70, 70);
+        font-family: Arial, Helvetica, sans-serif;
+        width: 20%;
+    }
+</style>
+
+<body>
+    <section class="main">
+        <div class="cnt-reporte-ventas">
+            <h2>Informe de Ventas</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaVentas"></tbody>
+            </table>
+
+            <a href="index.html">Volver al Registro de Ventas</a>
+        </div>
+    </section>
+
+    <script src="reporte.js"></script>
+</body>
+
+</html>
